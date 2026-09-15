@@ -1986,3 +1986,48 @@ footer {
             1px solid #ccc;
     }
 }
+
+/* =========================================
+   CREATOR CREDIT
+========================================== */
+
+.creator-credit {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 24px 0 18px;
+}
+
+.creator-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--violet-light);
+}
+
+.creator-credit strong {
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    letter-spacing: 0.08em;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.creator-subtitle {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .creator-credit {
+        margin-top: 20px;
+    }
+
+    .creator-credit strong {
+        font-size: 1.25rem;
+    }
+
+    .creator-subtitle {
+        font-size: 0.82rem;
+    }
+}
+
